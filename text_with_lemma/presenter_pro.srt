@@ -1,0 +1,488 @@
+1
+00:00:00,800 --> 00:00:04,720
+If you've ever recorded speech and afterwards had to transcribe it,
+
+2
+00:00:04,720 --> 00:00:08,800
+you know that not only is annotating the opposite of exciting,
+
+3
+00:00:08,800 --> 00:00:13,360
+it's also very time-consuming. But don't worry, you won't have to do that anymore.
+
+4
+00:00:14,960 --> 00:00:18,880
+These two things here are what we're going to get out at the end of this video.
+
+5
+00:00:18,880 --> 00:00:24,320
+An audio file with speech in it and a textgrid with a transcription linking the text to the
+
+6
+00:00:24,800 --> 00:00:29,600
+speech. We can achieve this with a super helpful tool for Praat, Presenter Pro.
+
+7
+00:00:30,240 --> 00:00:36,320
+This is a plugin which lets us prompt, record, and annotate speech all in a few simple steps.
+
+8
+00:00:36,320 --> 00:00:40,480
+We will go step by step and I promise that no matter whether you're new to this
+
+9
+00:00:40,480 --> 00:00:44,080
+or already a pro, there will be something helpful for you in this video.
+
+10
+00:00:44,880 --> 00:00:57,600
+Many speech researchers carry out recordings in which participants are asked to read aloud
+
+11
+00:00:57,600 --> 00:01:03,360
+utterances. So what's the problem? If you record these utterances in one recording session,
+
+12
+00:01:03,360 --> 00:01:08,560
+identifying which utterance you want at what point in time will result in considerable and
+
+13
+00:01:08,560 --> 00:01:14,400
+time-consuming post-editing because speakers often repeat utterances after they make a mistake.
+
+14
+00:01:15,040 --> 00:01:20,160
+Typically for a 30-minute recording, you may spend twice the amount of time afterwards
+
+15
+00:01:20,160 --> 00:01:24,160
+editing your recordings to identify the specific utterances you want.
+
+16
+00:01:24,160 --> 00:01:29,680
+Here, prompting software can help. The software prompts a text on the screen that a speaker
+
+17
+00:01:29,680 --> 00:01:35,440
+has asked to read. This could be a word or a sentence, for example. It automatically records
+
+18
+00:01:35,440 --> 00:01:41,360
+the utterance and saves it for later processing. So, this saves you long and heavy post-processing.
+
+19
+00:01:41,920 --> 00:01:48,480
+Nowadays, many sophisticated tools can do this, such as speech recorder from LMU or ProRec.
+
+20
+00:01:49,840 --> 00:01:54,720
+So, why use Presenter Pro? Well, first, Presenter Pro is based on Praat,
+
+21
+00:01:54,720 --> 00:01:59,440
+which is platform-independent, meaning you can use it in all operating systems.
+
+22
+00:01:59,440 --> 00:02:04,400
+Next, with Presenter Pro, you have a free choice of recording device. You can even use several
+
+23
+00:02:04,480 --> 00:02:09,920
+different recording devices at the same time, and all your recordings will automatically be edited.
+
+24
+00:02:09,920 --> 00:02:15,600
+Third, Presenter Pro will not cut or save only parts of the recording. It will always leave you
+
+25
+00:02:15,600 --> 00:02:21,680
+with a full backup of the entire recording session. And last, the plugin is easy to edit and adapt as
+
+26
+00:02:21,680 --> 00:02:27,040
+it was written in Praat's own scripting language, thus requiring no high-end coding knowledge.
+
+27
+00:02:27,920 --> 00:02:32,960
+Presenter Pro is a tool created with and for Praat. To use it, you will need to have Praat
+
+28
+00:02:32,960 --> 00:02:37,920
+already installed on your computer. If you're new to Praat, we recommend you either check out some
+
+29
+00:02:37,920 --> 00:02:42,880
+videos from the Uni Freiburg or read about the program in a guide from Will Styler. You will
+
+30
+00:02:42,880 --> 00:02:48,800
+find the link to both resources in the description below. To install Presenter Pro, first, you will
+
+31
+00:02:48,800 --> 00:02:55,440
+have to download the code. Go to our webpage, maneuver to the repositories, and look for Presenter Pro.
+
+32
+00:02:55,440 --> 00:03:02,640
+Then, click the code widget and select download zip. Next, open your downloads folder and
+
+33
+00:03:02,640 --> 00:03:08,560
+extract the contents of the zipped file. Now, locate your Praat preferences folder and move the
+
+34
+00:03:08,560 --> 00:03:15,040
+Presenter Pro folder into your Praat preferences. Once you did that, open the content folder,
+
+35
+00:03:15,040 --> 00:03:21,600
+right-click on the setup file, and open it with Praat. This will open Praat and a script. Run the
+
+36
+00:03:21,600 --> 00:03:27,440
+script by either clicking on the run button or pressing Command plus R. This will add a menu
+
+37
+00:03:27,440 --> 00:03:33,040
+command to your Praat Objects window, with which you can open Presenter Pro comfortably. It's
+
+38
+00:03:33,040 --> 00:03:38,560
+important not to move the Presenter Pro folder anymore, but to keep it in the Praat preferences.
+
+39
+00:03:38,560 --> 00:03:44,480
+Click on the menu command to open Presenter Pro. Congratulations! You have successfully installed
+
+40
+00:03:44,480 --> 00:03:50,560
+Presenter Pro and made it to the main menu. To run Presenter Pro, we first need a list of
+
+41
+00:03:50,560 --> 00:03:55,440
+utterances. When you press on Choose List, a pause menu will appear in which you can select a list
+
+42
+00:03:55,440 --> 00:04:00,080
+of utterances you want to use for the experiment. There are some demo lists you can use to give it
+
+43
+00:04:00,080 --> 00:04:05,920
+a try, but at some point you will want to create your own list of utterances. To create a new list,
+
+44
+00:04:05,920 --> 00:04:10,080
+maneuver back to the content folder, duplicate an already existing list,
+
+45
+00:04:10,080 --> 00:04:15,040
+delete its content, and type in your desired utterances. When you're done, don't forget to
+
+46
+00:04:15,040 --> 00:04:20,320
+rename your list. Now, if we press on Choose List again, our new list should appear right away.
+
+47
+00:04:21,200 --> 00:04:25,680
+Next up, we can name our speaker. This entry will name the textgrid we are about to create
+
+48
+00:04:25,680 --> 00:04:30,320
+when starting the application. You can record the utterance either with your own recording device
+
+49
+00:04:30,320 --> 00:04:36,240
+or use Praat's inbuilt sound recorder. For the latter, press on Record, Mono, or Stereo. This
+
+50
+00:04:36,240 --> 00:04:40,880
+will open the sound recorder window. Recording in stereo may come in handy if you want to
+
+51
+00:04:40,880 --> 00:04:45,680
+additionally record a second signal, for example with a Laryngograph. Make sure that you have
+
+52
+00:04:45,680 --> 00:04:51,040
+selected the correct input source and sampling frequency. Press on Record to start recording.
+
+53
+00:04:51,040 --> 00:04:54,400
+You must leave this window open and running during the experiment.
+
+54
+00:04:55,040 --> 00:04:58,640
+Below the recording buttons, you will find the Start From button. It controls which
+
+55
+00:04:58,640 --> 00:05:02,960
+utterance to first prompt on the screen. Keeping this at one means the first line in
+
+56
+00:05:02,960 --> 00:05:07,440
+your list will be shown first. Before you press on Start, make sure that your loudspeakers are
+
+57
+00:05:07,440 --> 00:05:13,280
+not muted. When you press on Start, Presenter Pro will play a calibration tone. It is important
+
+58
+00:05:13,280 --> 00:05:17,600
+that the sound is well audible in your recording, as it is a marker to later synchronize the
+
+59
+00:05:17,600 --> 00:05:23,280
+recording to the textgrid. Okay, you pressed Start, you should now see a red screen with the first
+
+60
+00:05:23,280 --> 00:05:28,000
+line of your utterance list. The red screen is the preparation phase. The participant has time to
+
+61
+00:05:28,000 --> 00:05:32,560
+read the utterance before speaking it. Once you press into the red screen, it will turn green.
+
+62
+00:05:32,560 --> 00:05:37,040
+This is the speaking phase. The participant should now read aloud the prompted utterance.
+
+63
+00:05:37,040 --> 00:05:41,600
+Note the arrows and buttons at the bottom of the screen. If, for example, you pressed into the
+
+64
+00:05:41,600 --> 00:05:45,760
+screen although you weren't ready yet, you can press the left arrow. This will bring you back
+
+65
+00:05:45,760 --> 00:05:50,320
+to the red screen from before. If you want to repeat the utterance, press on the Repeat button.
+
+66
+00:05:50,320 --> 00:05:54,560
+This will also bring you back to the red screen. If you're happy with your production, press the
+
+67
+00:05:54,560 --> 00:05:58,640
+right arrow, which will lead you to the next utterance. If you want to exit the experiment
+
+68
+00:05:58,640 --> 00:06:02,400
+preemptively, press the Exit button. This will conclude the experiment and bring you back to
+
+69
+00:06:02,400 --> 00:06:06,800
+the main menu. If you press the right arrow on the last utterance of your list, the experiment
+
+70
+00:06:06,800 --> 00:06:12,480
+will also conclude. Maneuver back to the sound recorder window and stop the recording by pressing
+
+71
+00:06:12,480 --> 00:06:17,360
+Stop. Then either press on Save to list or Save to list and close. In your objects window, you
+
+72
+00:06:17,360 --> 00:06:22,160
+should now have two objects. Your textgrid file, which is the name you gave it at the beginning,
+
+73
+00:06:22,160 --> 00:06:27,280
+and your sound file, which is still called Untitled. Select the sound object and press
+
+74
+00:06:27,280 --> 00:06:32,400
+View and Edit. This will open the sound editor window where you can modify and analyze your
+
+75
+00:06:32,400 --> 00:06:37,040
+recording. Remember the calibration tone from before. If everything worked correctly, you should
+
+76
+00:06:37,040 --> 00:06:42,320
+be able to identify it somewhere at the beginning of your sound, where exactly depends on how much
+
+77
+00:06:42,320 --> 00:06:46,960
+time it took from starting the recording to starting the experiment. You have two visual
+
+78
+00:06:46,960 --> 00:06:51,520
+helpers to find the tone, the waveform and the spectrogram. The waveform will most likely
+
+79
+00:06:51,520 --> 00:06:56,640
+resemble a block. By clicking into the waveform and dragging it along the x-axis, you can select
+
+80
+00:06:56,640 --> 00:07:01,280
+a portion of the sound. The calibration tone will be half a second long. We can double check
+
+81
+00:07:01,280 --> 00:07:05,680
+whether we found it by checking its duration. In the spectrogram, it will be indicated by a black
+
+82
+00:07:05,680 --> 00:07:11,120
+line centered around 500 Hertz. Once you have identified the tone, select the beginning of the
+
+83
+00:07:11,120 --> 00:07:16,960
+sound file up to and including the tone. Press on sel on the bottom of the editor window. This will
+
+84
+00:07:16,960 --> 00:07:22,720
+zoom in on the selected part. Now, click on the end of the tone and drag your mouse all the way to
+
+85
+00:07:22,720 --> 00:07:28,880
+the start of the sound. Maneuver to the editor drop down and select Cut or press Command plus X.
+
+86
+00:07:28,880 --> 00:07:34,160
+This will cut the selected portion of your sound. Close the editor window. Press down the Command
+
+87
+00:07:34,160 --> 00:07:39,680
+key and select both the textgrid and the sound object. Press on View and Edit. This will open
+
+88
+00:07:39,680 --> 00:07:44,480
+the editor once more, but now the textgrid will be shown beneath the sound. If everything worked
+
+89
+00:07:44,480 --> 00:07:49,360
+correctly, the speech will be aligned to the labeled intervals. You can check this by selecting an
+
+90
+00:07:49,360 --> 00:07:54,480
+interval and playing the sound file by pressing on the tab button. Save your sound as this is not
+
+91
+00:07:54,480 --> 00:08:01,120
+done automatically. Select the sound and press Save from the drop-down menu. Select Save as WAV
+
+92
+00:08:01,120 --> 00:08:05,200
+file and save the file where you need it. Do the same for your textgrid object.
+
+93
+00:08:05,840 --> 00:08:10,800
+You have now learned how to use Presenter Pro. However, the plugin comes with some important
+
+94
+00:08:10,800 --> 00:08:15,680
+additional features that you may want to benefit from. Back in the main menu below the start button,
+
+95
+00:08:15,680 --> 00:08:21,040
+you will find other buttons. I will go from left to right and explain each of them. First, there is
+
+96
+00:08:21,040 --> 00:08:25,760
+the Help button. When pressed, this button will open a manual where you can read about the functions
+
+97
+00:08:25,760 --> 00:08:31,680
+of Presenter Pro. What other functions there are, how to get in contact if you notice a bug, how to
+
+98
+00:08:31,680 --> 00:08:37,360
+deinstall the tool, and its version history. The Settings button will open a menu with some settings
+
+99
+00:08:37,360 --> 00:08:42,960
+for the display of your list, such as options to display your text differently, or change the font
+
+100
+00:08:42,960 --> 00:08:47,920
+style and size. If you prepare the list somewhere else on your computer, you could add it with the
+
+101
+00:08:48,000 --> 00:08:53,200
+Add List button. This will make a copy of your list in the Presenter Pro folder, but be careful.
+
+102
+00:08:53,200 --> 00:08:58,240
+If you add a list with the same name as a list within the folder, you will overwrite the already
+
+103
+00:08:58,240 --> 00:09:03,200
+existing file. The button Remove List will permanently delete the selected list in the List
+
+104
+00:09:03,200 --> 00:09:08,640
+folder. Be careful not to delete a list you still need, as there is no way of getting it back once
+
+105
+00:09:08,640 --> 00:09:14,000
+it has been deleted. For the Extract Intervals button, you need to have a sound and its corresponding
+
+106
+00:09:14,000 --> 00:09:19,520
+textgrid already selected. This function will create three files for each interval in your text
+
+107
+00:09:19,520 --> 00:09:24,400
+grid, a text file with the utterance, a WAV file with the sound from the beginning to the end of
+
+108
+00:09:24,400 --> 00:09:29,680
+the interval, and a corresponding textgrid file, also including the utterance. From the menu,
+
+109
+00:09:29,680 --> 00:09:34,880
+you can choose your sound format. If your sound is longer than a few minutes, choose Long Sound.
+
+110
+00:09:34,880 --> 00:09:39,920
+Else, choose Sound. Then, you must specify the write directory. I recommend creating an empty
+
+111
+00:09:39,920 --> 00:09:44,160
+folder first and writing your files into the folder. Otherwise, you may end up with a mess of
+
+112
+00:09:44,160 --> 00:09:49,360
+files somewhere on your computer. Once you have inserted your path, press Continue. Then, open
+
+113
+00:09:49,360 --> 00:09:54,640
+your folder to check whether it worked. If it did, you will have three files per interval. The last
+
+114
+00:09:54,640 --> 00:10:00,480
+button, textgrids, gives you direct access to your textgrids folder within the Presenter Pro folder.
+
+115
+00:10:00,480 --> 00:10:04,080
+It lets you choose a textgrid which will then be loaded into the Objects window.
+
+116
+00:10:04,720 --> 00:10:10,320
+So, that's all folks. I hope you enjoyed this tutorial. We are happy to get feedback on what
+
+117
+00:10:10,320 --> 00:10:14,800
+you liked and what you think we could improve. If you want to know more, make sure to check out
+
+118
+00:10:14,800 --> 00:10:19,120
+our website where you can find the latest updates on our resources. If you're planning on using
+
+119
+00:10:19,120 --> 00:10:24,560
+the tool for your research, make sure to cite it. The creator of Presenter Pro has published a short
+
+120
+00:10:24,560 --> 00:10:29,680
+paper on it. You can find the link together with more information on how to find our resources
+
+121
+00:10:29,680 --> 00:10:33,600
+and how to get in touch with us in the description below. This was Clemens from the
+
+122
+00:10:33,600 --> 00:10:45,600
+LiRI Resource Hub. Have a great day!
+

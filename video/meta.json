@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "name": "Test Corpus",
+        "author": "LCP tutorial",
+        "date": "2025-03-26",
+        "version": 2,
+        "corpusDescription": "Test corpus from the tutorial - with videos",
+        "mediaSlots": {
+            "video": {
+                "mediaType": "video",
+                "obligatory": true
+            }
+        }
+    },
+    "firstClass": {
+        "document": "Document",
+        "segment": "Segment",
+        "token": "Token"
+    },
+    "layer": {
+        "Document": {
+            "layerType": "span",
+            "contains": "Segment",
+            "anchoring": {
+                "stream": true,
+                "time": true,
+                "location": false
+            },
+            "attributes": {}
+        },
+        "Segment": {
+            "layerType": "span",
+            "contains": "Token",
+            "anchoring": {
+                "stream": true,
+                "time": true,
+                "location": false
+            },
+            "attributes": {
+                "original": {
+                    "type": "text",
+                    "nullable": false
+                }
+            }
+        },
+        "Token": {
+            "layerType": "unit",
+            "anchoring": {
+                "stream": true,
+                "time": false,
+                "location": false
+            },
+            "attributes": {
+                "form": {
+                    "type": "text",
+                    "nullable": false
+                },
+                "lemma": {
+                    "type": "text",
+                    "nullable": false
+                },
+                "shortened": {
+                    "type": "categorical",
+                    "values": [
+                        "yes",
+                        "no"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,463 @@
+﻿1
+00:00:10,433 --> 00:00:14,366
+It shouldn't be that complicated to
+carry out simple edits in a speech corpus.
+
+2
+00:00:14,766 --> 00:00:18,200
+And luckily with databaseExplorer
+it isn't.
+
+3
+00:00:18,600 --> 00:00:22,200
+Learn how to inspect edit,
+and save your files
+
+4
+00:00:22,533 --> 00:00:25,533
+all with just some simple clicks
+of your mouse.
+
+5
+00:00:29,100 --> 00:00:30,333
+Often, speech
+
+6
+00:00:30,333 --> 00:00:33,333
+researchers need to handle
+a large number of audio files,
+
+7
+00:00:33,733 --> 00:00:37,733
+and although most steps in your research
+plan can be fully automated,
+
+8
+00:00:38,000 --> 00:00:41,500
+sometimes there is no sleek
+and efficient option
+
+9
+00:00:41,600 --> 00:00:44,766
+other than to manually check your files
+one by one.
+
+10
+00:00:45,466 --> 00:00:50,033
+With databaseExplorer, it is easy to look
+through a folder of audio files,
+
+11
+00:00:50,500 --> 00:00:54,466
+cut your desired part,
+and save it to a new location.
+
+12
+00:00:54,466 --> 00:00:56,266
+databaseExplorer is a PRAAT
+
+13
+00:00:57,066 --> 00:01:02,533
+plugin, meaning you must have PRAAT already
+installed on your computer to use it.
+
+14
+00:01:02,533 --> 00:01:07,266
+If this is not the case, as always,
+check out the official website of PRAAT
+
+15
+00:01:07,266 --> 00:01:09,600
+where you will find
+all the information you need.
+
+16
+00:01:09,600 --> 00:01:11,866
+The link is in the description.
+
+17
+00:01:11,866 --> 00:01:13,800
+Installing the tool is simple.
+
+18
+00:01:13,800 --> 00:01:15,733
+Just go to our GitHub website.
+
+19
+00:01:15,733 --> 00:01:20,066
+Locate the databaseExplorer folder
+and click on Download as zip.
+
+20
+00:01:20,166 --> 00:01:22,333
+Once downloaded and extracted,
+
+21
+00:01:22,333 --> 00:01:24,833
+you'll notice
+that there are two scripts in the folder.
+
+22
+00:01:25,566 --> 00:01:30,166
+If you'd like to add a button
+to your objects window to open database
+
+23
+00:01:30,166 --> 00:01:33,966
+Explorer more comfortably, you can open
+the installation script and run it.
+
+24
+00:01:34,333 --> 00:01:38,633
+This will create a copy of the database
+Explorer script in your PRAAT preferences
+
+25
+00:01:38,633 --> 00:01:42,566
+directory, and add a button
+to your Dynamic Objects window, meaning
+
+26
+00:01:42,566 --> 00:01:46,333
+you will only see the button once you
+selected a sound in the objects window.
+
+27
+00:01:46,366 --> 00:01:51,533
+If you don't wish to install the button,
+you can simply open databaseExplorer
+
+28
+00:01:51,533 --> 00:01:55,733
+by running the script
+called databaseExplorer manually.
+
+29
+00:01:56,366 --> 00:01:59,333
+To start
+databaseExplorer, you need to first load
+
+30
+00:01:59,333 --> 00:02:03,133
+one of the audio files in the folder
+you'd like to look through into your PRAAT
+
+31
+00:02:03,133 --> 00:02:04,166
+Objects window.
+
+32
+00:02:04,166 --> 00:02:07,533
+Then select the file and open databaseExplorer.
+
+33
+00:02:07,533 --> 00:02:08,133
+This will open a window
+
+34
+00:02:08,133 --> 00:02:08,733
+This will open a window
+
+35
+00:02:08,733 --> 00:02:12,533
+showing you the waveform and spectrogram
+of the currently selected sound.
+
+36
+00:02:12,533 --> 00:02:13,333
+In your folder.
+
+37
+00:02:13,333 --> 00:02:17,300
+On the left side of the screen,
+you can see a list of the other audio
+
+38
+00:02:17,300 --> 00:02:22,000
+files in the folder, and how many files
+come before and after the selected file.
+
+39
+00:02:22,066 --> 00:02:23,866
+On the right side of your screen,
+
+40
+00:02:23,866 --> 00:02:26,900
+there is a legend showing you
+how to use the plugin.
+
+41
+00:02:27,266 --> 00:02:29,866
+Let's go through the functions one by one.
+
+42
+00:02:29,866 --> 00:02:33,200
+The first three lines tell you
+how to select a portion of the sound
+
+43
+00:02:33,200 --> 00:02:34,400
+and cut away the rest.
+
+44
+00:02:34,400 --> 00:02:37,433
+Simply click into the waveform
+at the point you want your new file
+
+45
+00:02:37,433 --> 00:02:38,133
+to begin.
+
+46
+00:02:38,133 --> 00:02:41,066
+Click once more
+where you want the file to end.
+
+47
+00:02:41,066 --> 00:02:45,566
+If you missed, just click a third time
+and both selections are removed.
+
+48
+00:02:45,600 --> 00:02:46,466
+Next up.
+
+49
+00:02:46,466 --> 00:02:49,766
+When you press the spacebar,
+the plugin will save the audio
+
+50
+00:02:49,800 --> 00:02:52,200
+with the changes
+you made to your write directory.
+
+51
+00:02:52,200 --> 00:02:55,500
+You can choose the write directory
+by pressing the W key.
+
+52
+00:02:55,533 --> 00:02:58,700
+This will open a finder window
+in which you can choose the location.
+
+53
+00:02:58,700 --> 00:02:59,800
+Your files should be saved
+
+54
+00:02:59,800 --> 00:03:04,166
+to press the D key to delete a file
+already saved in your write directory.
+
+55
+00:03:04,533 --> 00:03:08,666
+The next five lines tell you how to move
+through the files in your folder.
+
+56
+00:03:08,700 --> 00:03:13,133
+You can use the left and right
+arrow keys to move one file up or down.
+
+57
+00:03:13,166 --> 00:03:16,266
+Pressing the spacebar will also move
+you one forward.
+
+58
+00:03:16,300 --> 00:03:20,000
+However, it will also always save the file
+to your right directory.
+
+59
+00:03:20,033 --> 00:03:21,800
+If you want to make bigger jumps.
+
+60
+00:03:21,800 --> 00:03:26,066
+You can use the up and down arrow to jump
+three files up and down in your folder.
+
+61
+00:03:26,100 --> 00:03:29,966
+If that's too fancy for you,
+or if your folder contains many files,
+
+62
+00:03:30,166 --> 00:03:34,433
+you can press the G key and manually type
+in the file number you want to jump to.
+
+63
+00:03:35,300 --> 00:03:38,533
+Press the P key
+to listen to the currently selected sound.
+
+64
+00:03:38,733 --> 00:03:41,566
+“Die Frau des Apothekers weiss immer was Sie will.”
+
+65
+00:03:41,766 --> 00:03:43,200
+with the plus and minus keys
+
+66
+00:03:43,300 --> 00:03:46,666
+You can increase and decrease
+the filter bandwidth of your spectrogram.
+
+67
+00:03:46,700 --> 00:03:50,733
+This can be useful when you're looking
+for specific Formants in your sound.
+
+68
+00:03:50,766 --> 00:03:54,900
+If you have a textgrid file, then
+it can be displayed by pressing the T key.
+
+69
+00:03:54,933 --> 00:03:56,433
+This is a toggle meaning.
+
+70
+00:03:56,433 --> 00:03:59,400
+By pressing T again,
+the textgrid disappears.
+
+71
+00:03:59,400 --> 00:04:02,033
+Note that the textgrid and audio file
+
+72
+00:04:02,033 --> 00:04:05,866
+must have identical file
+names for this feature to work.
+
+73
+00:04:07,666 --> 00:04:10,866
+By pressing the S
+key, you can display the settings window.
+
+74
+00:04:10,866 --> 00:04:12,533
+It lets you choose whether instead
+
+75
+00:04:12,533 --> 00:04:15,766
+of saving your modified files,
+it should save the originals.
+
+76
+00:04:15,766 --> 00:04:19,533
+If you select this option,
+the modifications you made will show up
+
+77
+00:04:19,533 --> 00:04:23,800
+in an interval tier saved in a textgrid file together with your sound.
+
+78
+00:04:23,800 --> 00:04:27,066
+If you do this while you have the textgrid selected,
+
+79
+00:04:27,066 --> 00:04:31,366
+databseExplorer will simply combine
+your textgrid with the new modifications,
+
+80
+00:04:31,366 --> 00:04:32,300
+losing no data.
+
+81
+00:04:32,300 --> 00:04:37,100
+You can also either turn on or off
+the function to move on with the spacebar.
+
+82
+00:04:37,133 --> 00:04:38,866
+This way, when you save a file,
+
+83
+00:04:38,866 --> 00:04:42,166
+you will have to manually move on
+with the arrow keys afterwards.
+
+84
+00:04:42,166 --> 00:04:43,066
+Additionally,
+
+85
+00:04:43,066 --> 00:04:46,666
+it is possible to change the frequency
+ceiling of the displayed spectrogram.
+
+86
+00:04:46,700 --> 00:04:49,700
+This is especially helpful
+when audio has information
+
+87
+00:04:49,700 --> 00:04:52,666
+in frequency bands
+above the default 8000Hz.
+
+88
+00:04:52,666 --> 00:04:57,066
+Finally, when you're done, pat yourself
+on the back and press the Q key
+
+89
+00:04:57,166 --> 00:04:59,400
+to exit the application. Well done.
+
+90
+00:05:00,866 --> 00:05:02,200
+That's it for this video.
+
+91
+00:05:02,200 --> 00:05:04,800
+I hope you learned something
+and that you had fun.
+
+92
+00:05:04,800 --> 00:05:05,333
+If you think we missed something
+or want to write us, go to our website
+
+93
+00:05:05,333 --> 00:05:05,866
+If you think we missed something
+or want to write us, go to our website
+
+94
+00:05:05,866 --> 00:05:06,966
+If you think we missed something
+or want to write us, go to our website
+
+95
+00:05:06,966 --> 00:05:09,133
+If you think we missed something
+or want to write us, go to our website
+
+96
+00:05:09,266 --> 00:05:13,200
+where you will find all the information
+on who we are, what we do,
+
+97
+00:05:13,500 --> 00:05:15,233
+and how to get in touch with us.
+
+98
+00:05:15,233 --> 00:05:17,766
+This was Clemens
+from the LiRI Resource Hub.
+
+99
+00:05:17,766 --> 00:05:20,766
+Keep on exploring
+and I hope you have a great day.
