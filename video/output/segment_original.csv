@@ -1,0 +1,169 @@
+original_id,original
+1,It shouldn't be that complicated to carry out simple edits in a speech corpus
+2,And luckily with databaseExplorer it isn't
+3,"Learn how to inspect edit, and save your files all with just some simple clicks of your mouse"
+4,"Often, speech researchers need to handle a large number of audio files, and although most steps in your research plan can be fully automated, sometimes there is no sleek and efficient option other than to manually check your files one by one"
+5,"With databaseExplorer, it is easy to look through a folder of audio files, cut your desired part, and save it to a new location"
+6,"databaseExplorer is a PRAAT plugin, meaning you must have PRAAT already installed on your computer to use it"
+7,"If this is not the case, as always, check out the official website of PRAAT where you will find all the information you need"
+8,The link is in the description
+9,Installing the tool is simple
+10,Just go to our GitHub website
+11,Locate the databaseExplorer folder and click on Download as zip
+12,"Once downloaded and extracted, you'll notice that there are two scripts in the folder"
+13,"If you'd like to add a button to your objects window to open database Explorer more comfortably, you can open the installation script and run it"
+14,"This will create a copy of the database Explorer script in your PRAAT preferences directory, and add a button to your Dynamic Objects window, meaning you will only see the button once you selected a sound in the objects window"
+15,"If you don't wish to install the button, you can simply open databaseExplorer by running the script called databaseExplorer manually"
+16,"To start databaseExplorer, you need to first load one of the audio files in the folder you'd like to look through into your PRAAT Objects window"
+17,Then select the file and open databaseExplorer
+18,This will open a window This will open a window showing you the waveform and spectrogram of the currently selected sound
+19,In your folder
+20,"On the left side of the screen, you can see a list of the other audio files in the folder, and how many files come before and after the selected file"
+21,"On the right side of your screen, there is a legend showing you how to use the plugin"
+22,Let's go through the functions one by one
+23,The first three lines tell you how to select a portion of the sound and cut away the rest
+24,Simply click into the waveform at the point you want your new file to begin
+25,Click once more where you want the file to end
+26,"If you missed, just click a third time and both selections are removed"
+27,Next up
+28,"When you press the spacebar, the plugin will save the audio with the changes you made to your write directory"
+29,You can choose the write directory by pressing the W key
+30,This will open a finder window in which you can choose the location
+31,Your files should be saved to press the D key to delete a file already saved in your write directory
+32,The next five lines tell you how to move through the files in your folder
+33,You can use the left and right arrow keys to move one file up or down
+34,Pressing the spacebar will also move you one forward
+35,"However, it will also always save the file to your right directory"
+36,If you want to make bigger jumps
+37,You can use the up and down arrow to jump three files up and down in your folder
+38,"If that's too fancy for you, or if your folder contains many files, you can press the G key and manually type in the file number you want to jump to"
+39,Press the P key to listen to the currently selected sound
+40,“Die Frau des Apothekers weiss immer was Sie will
+41,” with the plus and minus keys You can increase and decrease the filter bandwidth of your spectrogram
+42,This can be useful when you're looking for specific Formants in your sound
+43,"If you have a textgrid file, then it can be displayed by pressing the T key"
+44,This is a toggle meaning
+45,"By pressing T again, the textgrid disappears"
+46,Note that the textgrid and audio file must have identical file names for this feature to work
+47,"By pressing the S key, you can display the settings window"
+48,"It lets you choose whether instead of saving your modified files, it should save the originals"
+49,"If you select this option, the modifications you made will show up in an interval tier saved in a textgrid file together with your sound"
+50,"If you do this while you have the textgrid selected, databseExplorer will simply combine your textgrid with the new modifications, losing no data"
+51,You can also either turn on or off the function to move on with the spacebar
+52,"This way, when you save a file, you will have to manually move on with the arrow keys afterwards"
+53,"Additionally, it is possible to change the frequency ceiling of the displayed spectrogram"
+54,This is especially helpful when audio has information in frequency bands above the default 8000Hz
+55,"Finally, when you're done, pat yourself on the back and press the Q key to exit the application"
+56,That's it for this video
+57,I hope you learned something and that you had fun
+58,"If you think we missed something or want to write us, go to our website If you think we missed something or want to write us, go to our website If you think we missed something or want to write us, go to our website If you think we missed something or want to write us, go to our website where you will find all the information on who we are, what we do, and how to get in touch with us"
+59,This was Clemens from the LiRI Resource Hub
+60,Keep on exploring and I hope you have a great day
+61,"If you've ever recorded speech and afterwards had to transcribe it, you know that not only is annotating the opposite of exciting, it's also very time-consuming"
+62,These two things here are what we're going to get out at the end of this video
+63,An audio file with speech in it and a textgrid with a transcription linking the text to the speech
+64,"This is a plugin which lets us prompt, record, and annotate speech all in a few simple steps"
+65,"We will go step by step and I promise that no matter whether you're new to this or already a pro, there will be something helpful for you in this video"
+66,Many speech researchers carry out recordings in which participants are asked to read aloud utterances
+67,"If you record these utterances in one recording session, identifying which utterance you want at what point in time will result in considerable and time-consuming post-editing because speakers often repeat utterances after they make a mistake"
+68,"Typically for a 30-minute recording, you may spend twice the amount of time afterwards editing your recordings to identify the specific utterances you want"
+69,"Here, prompting software can help"
+70,The software prompts a text on the screen that a speaker has asked to read
+71,It automatically records the utterance and saves it for later processing
+72,"Nowadays, many sophisticated tools can do this, such as speech recorder from LMU or ProRec"
+73,"So, why use Presenter Pro"
+74,"Well, first, Presenter Pro is based on Praat, which is platform-independent, meaning you can use it in all operating systems"
+75,"Next, with Presenter Pro, you have a free choice of recording device"
+76,"You can even use several different recording devices at the same time, and all your recordings will automatically be edited"
+77,"Third, Presenter Pro will not cut or save only parts of the recording"
+78,It will always leave you with a full backup of the entire recording session
+79,"And last, the plugin is easy to edit and adapt as it was written in Praat's own scripting language, thus requiring no high-end coding knowledge"
+80,Presenter Pro is a tool created with and for Praat
+81,"To use it, you will need to have Praat already installed on your computer"
+82,"If you're new to Praat, we recommend you either check out some videos from the Uni Freiburg or read about the program in a guide from Will Styler"
+83,You will find the link to both resources in the description below
+84,"To install Presenter Pro, first, you will have to download the code"
+85,"Then, click the code widget and select download zip"
+86,"Next, open your downloads folder and extract the contents of the zipped file"
+87,"Now, locate your Praat preferences folder and move the Presenter Pro folder into your Praat preferences"
+88,"Once you did that, open the content folder, right-click on the setup file, and open it with Praat"
+89,Run the script by either clicking on the run button or pressing Command plus R
+90,"This will add a menu command to your Praat Objects window, with which you can open Presenter Pro comfortably"
+91,"It's important not to move the Presenter Pro folder anymore, but to keep it in the Praat preferences"
+92,Click on the menu command to open Presenter Pro
+93,You have successfully installed Presenter Pro and made it to the main menu
+94,"To run Presenter Pro, we first need a list of utterances"
+95,"When you press on Choose List, a pause menu will appear in which you can select a list of utterances you want to use for the experiment"
+96,"There are some demo lists you can use to give it a try, but at some point you will want to create your own list of utterances"
+97,"To create a new list, maneuver back to the content folder, duplicate an already existing list, delete its content, and type in your desired utterances"
+98,"When you're done, don't forget to rename your list"
+99,"Next up, we can name our speaker"
+100,This entry will name the textgrid we are about to create when starting the application
+101,You can record the utterance either with your own recording device or use Praat's inbuilt sound recorder
+102,This will open the sound recorder window
+103,"Recording in stereo may come in handy if you want to additionally record a second signal, for example with a Laryngograph"
+104,Make sure that you have selected the correct input source and sampling frequency
+105,You must leave this window open and running during the experiment
+106,"Below the recording buttons, you will find the Start From button"
+107,It controls which utterance to first prompt on the screen
+108,Keeping this at one means the first line in your list will be shown first
+109,"Before you press on Start, make sure that your loudspeakers are not muted"
+110,"It is important that the sound is well audible in your recording, as it is a marker to later synchronize the recording to the textgrid"
+111,"Okay, you pressed Start, you should now see a red screen with the first line of your utterance list"
+112,The participant has time to read the utterance before speaking it
+113,This is the speaking phase
+114,Note the arrows and buttons at the bottom of the screen
+115,"If, for example, you pressed into the screen although you weren't ready yet, you can press the left arrow"
+116,This will bring you back to the red screen from before
+117,This will also bring you back to the red screen
+118,"If you're happy with your production, press the right arrow, which will lead you to the next utterance"
+119,"If you want to exit the experiment preemptively, press the Exit button"
+120,This will conclude the experiment and bring you back to the main menu
+121,"If you press the right arrow on the last utterance of your list, the experiment will also conclude"
+122,Maneuver back to the sound recorder window and stop the recording by pressing Stop
+123,"In your objects window, you should now have two objects"
+124,"Your textgrid file, which is the name you gave it at the beginning, and your sound file, which is still called Untitled"
+125,Select the sound object and press View and Edit
+126,This will open the sound editor window where you can modify and analyze your recording
+127,"If everything worked correctly, you should be able to identify it somewhere at the beginning of your sound, where exactly depends on how much time it took from starting the recording to starting the experiment"
+128,"You have two visual helpers to find the tone, the waveform and the spectrogram"
+129,The waveform will most likely resemble a block
+130,"By clicking into the waveform and dragging it along the x-axis, you can select a portion of the sound"
+131,We can double check whether we found it by checking its duration
+132,"In the spectrogram, it will be indicated by a black line centered around 500 Hertz"
+133,"Once you have identified the tone, select the beginning of the sound file up to and including the tone"
+134,This will zoom in on the selected part
+135,"Now, click on the end of the tone and drag your mouse all the way to the start of the sound"
+136,This will cut the selected portion of your sound
+137,Press down the Command key and select both the textgrid and the sound object
+138,"This will open the editor once more, but now the textgrid will be shown beneath the sound"
+139,"If everything worked correctly, the speech will be aligned to the labeled intervals"
+140,You can check this by selecting an interval and playing the sound file by pressing on the tab button
+141,Save your sound as this is not done automatically
+142,Select Save as WAV file and save the file where you need it
+143,You have now learned how to use Presenter Pro
+144,"However, the plugin comes with some important additional features that you may want to benefit from"
+145,"Back in the main menu below the start button, you will find other buttons"
+146,"First, there is the Help button"
+147,"When pressed, this button will open a manual where you can read about the functions of Presenter Pro"
+148,"What other functions there are, how to get in contact if you notice a bug, how to deinstall the tool, and its version history"
+149,"The Settings button will open a menu with some settings for the display of your list, such as options to display your text differently, or change the font style and size"
+150,"If you prepare the list somewhere else on your computer, you could add it with the Add List button"
+151,"If you add a list with the same name as a list within the folder, you will overwrite the already existing file"
+152,The button Remove List will permanently delete the selected list in the List folder
+153,"Be careful not to delete a list you still need, as there is no way of getting it back once it has been deleted"
+154,"For the Extract Intervals button, you need to have a sound and its corresponding textgrid already selected"
+155,"This function will create three files for each interval in your text grid, a text file with the utterance, a WAV file with the sound from the beginning to the end of the interval, and a corresponding textgrid file, also including the utterance"
+156,"From the menu, you can choose your sound format"
+157,"Else, choose Sound"
+158,I recommend creating an empty folder first and writing your files into the folder
+159,"Otherwise, you may end up with a mess of files somewhere on your computer"
+160,"Then, open your folder to check whether it worked"
+161,"The last button, textgrids, gives you direct access to your textgrids folder within the Presenter Pro folder"
+162,It lets you choose a textgrid which will then be loaded into the Objects window
+163,"So, that's all folks"
+164,We are happy to get feedback on what you liked and what you think we could improve
+165,"If you want to know more, make sure to check out our website where you can find the latest updates on our resources"
+166,"If you're planning on using the tool for your research, make sure to cite it"
+167,The creator of Presenter Pro has published a short paper on it
+168,You can find the link together with more information on how to find our resources and how to get in touch with us in the description below

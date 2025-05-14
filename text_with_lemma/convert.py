@@ -36,7 +36,6 @@ class Converter:
         # associate the unique values to IDs for lookup purposes
         self.lookups = {
             "form": {},
-            "original": {},
         }
         # the CSV outputs
         self.outputs = {
@@ -53,46 +52,31 @@ class Converter:
         # lower bound of the segment's char_range
         char_range_seg_start = self.char_range
         seg_id = uuid4()  # use a uuid for the segment
-        token = ""  # string buffer for the token being currently processed
-        shortened = False  # is the current token preceded by a single-quote character?
-        # read the text one character at a time (make sure it ends with a token delimiter)
-        for c in text + ",":
-            # if we hit a token delimiter: write the current token (if any)
-            if search(self.token_delimiters, c):
-                if not token:
-                    continue
-                # retrieve and store the form's ID
-                form_id = forms.get(token, len(forms) + 1)
-                forms[token] = form_id
-                # write the token's information to the output
-                self.outputs["token"].writerow(
-                    [
-                        self.token_id,
-                        form_id,  # we use the same values for form
-                        form_id,  # as for lemma
-                        "yes" if shortened else "no",
-                        to_range(self.char_range, self.char_range + len(token)),
-                        seg_id,
-                    ]
-                )
-                # increment the char_range counter by the number of characters in the token
-                self.char_range += len(token)
-                self.token_id += 1
-                # if the token delimiter is a single quote, mark the next token as shortened
-                shortened = c == "'"
-                token = ""
-            else:
-                token += c  # append the character to the string buffer
-        originals = self.lookups["original"]
-        # retrieve and store the original text's ID
-        original_id = originals.get(text, len(originals) + 1)
-        originals[text] = original_id
+        # read the text one token at a time
+        for token in split(self.token_delimiters, text):
+            if not token:
+                continue
+            # retrieve and store the form's ID
+            form_id = forms.get(token, len(forms) + 1)
+            forms[token] = form_id
+            # write the token's information to the output
+            self.outputs["token"].writerow(
+                [
+                    self.token_id,
+                    form_id,
+                    form_id,
+                    to_range(self.char_range, self.char_range + len(token)),
+                    seg_id,
+                ]
+            )
+            # increment the char_range counter by the number of characters in the token
+            self.char_range += len(token)
+            self.token_id += 1
         # now that all the tokens have been processed, write the segment to the segment file
         self.outputs["segment"].writerow(
             [
                 seg_id,
                 to_range(char_range_seg_start, self.char_range),
-                original_id,
             ]
         )
         return
@@ -156,8 +140,6 @@ class Converter:
         for form, form_id in self.lookups["form"].items():
             self.outputs["token_form"].writerow([form_id, form])
             self.outputs["token_lemma"].writerow([form_id, form])
-        for original, original_id in self.lookups["original"].items():
-            self.outputs["segment_original"].writerow([original_id, original])
         return
 
 
@@ -168,11 +150,7 @@ if not path.exists("output"):
 # we first create all the output files
 with open(path.join("output", "document.csv"), "w") as doc_output, open(
     path.join("output", "segment.csv"), "w"
-) as seg_output, open(
-    path.join("output", "segment_original.csv"), "w"
-) as original_output, open(
-    path.join("output", "token.csv"), "w"
-) as tok_output, open(
+) as seg_output, open(path.join("output", "token.csv"), "w") as tok_output, open(
     path.join("output", "token_form.csv"), "w"
 ) as form_output, open(
     path.join("output", "token_lemma.csv"), "w"
@@ -181,19 +159,17 @@ with open(path.join("output", "document.csv"), "w") as doc_output, open(
     # initiate an instance of Converter with the output files
     converter = Converter(
         document=(doc_output, ["document_id", "char_range"]),
-        segment=(seg_output, ["segment_id", "char_range", "original_id"]),
+        segment=(seg_output, ["segment_id", "char_range"]),
         token=(
             tok_output,
             [
                 "token_id",
                 "form_id",
                 "lemma_id",
-                "shortened",
                 "char_range",
                 "segment_id",
             ],
         ),
-        segment_original=(original_output, ["original_id", "original"]),
         token_form=(form_output, ["form_id", "form"]),
         token_lemma=(lemma_output, ["lemma_id", "lemma"]),
     )
